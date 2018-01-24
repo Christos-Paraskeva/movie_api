@@ -1,0 +1,40 @@
+{
+  "name": "movie_api_test",
+  "version": "1.0.0",
+  "description": "Testing the api and reponse",
+  "main": "src/main/index.ts",
+  "scripts": {
+    "build": "tsc --pretty",
+    "test": "mocha -r ts-node/register $(find src/test/unit -name '*.spec.ts')",
+    "test-integration": "mocha -t 30000 -r ts-node/register $(find test/integration -name '*.ts')"
+  },
+  "author": "christos_paraskeva",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "bluebird-retry": "^0.10.1",
+    "knex": "^0.13.0",
+    "mysql": "^2.13.0",
+    "yargs": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.3",
+    "@types/bluebird-retry": "^0.0.32",
+    "@types/chai": "^3.5.2",
+    "@types/chai-as-promised": "^0.0.30",
+    "@types/knex": "^0.0.49",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.15",
+    "@types/request": "^2.0.7",
+    "@types/request-promise": "^4.1.39",
+    "@types/sinon": "^2.1.3",
+    "@types/yargs": "^6.6.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.3.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sinon": "^2.2.0",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.3.2"
+  }
+}
